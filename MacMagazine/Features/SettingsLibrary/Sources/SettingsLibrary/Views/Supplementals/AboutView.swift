@@ -24,7 +24,7 @@ struct AboutView: View {
 private extension AboutView {
     @ViewBuilder
     var footerView: some View {
-        Text("MacMagazine é um [projeto de código aberto no GitHub](https://github.com/MacMagazine/app-iOS) liderado por Cassio Rossi.")
+        Text("Esporte para Todos é um app baseado no [projeto open source do MacMagazine](https://github.com/MacMagazine/app-iOS) (criado por Cassio Rossi), adaptado por Michel Duarte Correa.")
             .font(.caption)
             .foregroundColor(theme.text.terciary.color)
             .tint(theme.button.primary.color)

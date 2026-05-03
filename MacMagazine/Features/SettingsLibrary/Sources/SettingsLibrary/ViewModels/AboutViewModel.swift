@@ -29,10 +29,10 @@ final class AboutViewModel {
 extension AboutViewModel {
     @MainActor
     func composeMessage() {
-        let destination = "contato@macmagazine.com.br"
-        let subject = "Relato de problema no app MacMagazine \(Bundle.version ?? "versão desconhecida")"
+        let destination = "michel@esporteparatodos.com.br"
+        let subject = "Relato de problema no app Esporte para Todos \(Bundle.version ?? "versão desconhecida")"
         let body = """
-Olá MM, gostaria de reportar um problema no app.
+Olá EpT, gostaria de reportar um problema no app.
 
 - O que aconteceu:
 

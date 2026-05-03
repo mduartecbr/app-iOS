@@ -51,7 +51,7 @@ extension MainView {
                 }
             }
         }
-        .navigationTitle("MacMagazine")
+        .navigationTitle("Esporte para Todos")
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
             ToolbarItem(placement: .bottomBar) {
