@@ -77,18 +77,19 @@ private extension SocialView {
                     analytics: viewModel.analytics
                 )
         case .podcast:
-            PodcastView(
-                storage: viewModel.storage,
-                favorite: $favorite,
-                scrollPosition: $scrollPosition
-            ).transition(.opacity)
-                .trackScreen(
-                    viewModel.social.rawValue,
-                    previous: nil,
-                    analytics: viewModel.analytics
-                )
+            // EpT MVP: podcast ainda não existe — placeholder "Em breve" no lugar da PodcastView.
+            ComingSoonView(
+                title: "Em breve",
+                message: "O Esporte para Todos está preparando seu podcast."
+            )
+            .transition(.opacity)
+            .trackScreen(
+                viewModel.social.rawValue,
+                previous: nil,
+                analytics: viewModel.analytics
+            )
         case .instagram:
-            MMWebView(url: "https://macmagazine.com.br/posts-instagram-app/", cacheKey: "macmagazine_instagram")
+            MMWebView(url: "https://www.instagram.com/esporteparatodos/", cacheKey: "ept_instagram")
                 .trackScreen(
                     viewModel.social.rawValue,
                     previous: nil,
@@ -123,4 +124,34 @@ private extension SocialView {
             pushNotification: PushNotification(),
             inMemory: true
         ))
+}
+
+// MARK: - Coming Soon Placeholder -
+
+/// Generic "Em breve" placeholder used when a feature isn't ready yet (currently the Podcast tab).
+private struct ComingSoonView: View {
+    @Environment(\.theme) private var theme: ThemeColor
+
+    let title: String
+    let message: String
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Image(systemName: "hourglass")
+                .font(.system(size: 56, weight: .light))
+                .foregroundColor(theme.text.terciary.color)
+            Text(title)
+                .font(.title2.weight(.semibold))
+                .foregroundStyle(.primary)
+            Text(message)
+                .font(.body)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background((theme.main.background.color ?? Color(.systemBackground)).ignoresSafeArea())
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(title). \(message)")
+    }
 }

@@ -17,10 +17,8 @@ final public class SettingsViewModel {
     private var storedTabs: [AppTabs] = AppTabs.allCases
 
     public var tabs: [AppTabs] {
-        if !isLive {
-            return storedTabs.filter { $0 != .live }
-        }
-        return storedTabs
+        // EpT MVP: aba MM Live cortada permanentemente (Esporte para Todos não tem live por enquanto).
+        return storedTabs.filter { $0 != .live }
     }
 
     let storage: Database

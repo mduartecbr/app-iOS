@@ -27,17 +27,7 @@ public struct SettingsView: View {
                     analytics: analytics
                 )
             }
-
-            .sheet(isPresented: $isPresentingLoginPatrao) {
-                PatronLoginSheet(
-                    onLoginSuccess: {
-                        isPatrao = true
-                        isPresentingLoginPatrao = false
-                    },
-                    onDismiss: { isPresentingLoginPatrao = false },
-                    analytics: analytics
-                )
-            }
+            // EpT MVP: sheet do Login Patrão removido (Esporte para Todos não tem assinatura).
     }
 }
 
@@ -47,11 +37,7 @@ private extension SettingsView {
             (theme.main.background.color ?? Color.secondary).ignoresSafeArea()
             List {
                 appearance
-                SubscriptionView(
-                    isPatrao: $isPatrao,
-                    isPresentingLoginPatrao: $isPresentingLoginPatrao,
-                    urlToOpen: $urlToOpen
-                )
+                // EpT MVP: SubscriptionView removida (não há assinatura nem Login Patrão no Esporte para Todos).
                 PushOptionsView()
                 AboutView(presentingContent: $presentingContent)
             }
