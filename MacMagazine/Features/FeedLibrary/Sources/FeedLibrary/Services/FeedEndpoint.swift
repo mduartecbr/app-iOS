@@ -2,7 +2,7 @@ import Foundation
 import NetworkLibrary
 
 enum APIDefinitions {
-    static let mainDomain = "macmagazine.com.br"
+    static let mainDomain = "esporteparatodos.com"
     static let mainURL = "https://\(mainDomain)/"
 
     static let patraoLoginUrl = "\(mainURL)loginpatrao"

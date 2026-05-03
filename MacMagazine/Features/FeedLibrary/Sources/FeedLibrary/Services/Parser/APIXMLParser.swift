@@ -108,6 +108,14 @@ class APIXMLParser: NSObject, XMLParserDelegate {
 			case "content:encoded":
 				currentPost.playable = value.contains("youtube.com/embed/")
 				currentPost.fullContent = parseFullContent ? value.htmlDecoded.clean : ""
+				// Fallback: if no <media:content> tag provided an artwork URL,
+				// extract the first <img src="..."> from the HTML content.
+				// This handles WordPress sites whose RSS feeds don't emit media:content
+				// (e.g. WordPress.com hosted sites without a featured-image-in-RSS plugin).
+				if currentPost.artworkURL.isEmpty,
+				   let imageURL = Self.extractFirstImageURL(from: value) {
+					currentPost.artworkURL = imageURL
+				}
 			case "dc:creator":
 				currentPost.creator = value
 			default:
@@ -126,5 +134,27 @@ class APIXMLParser: NSObject, XMLParserDelegate {
 
 	func parserDidEndDocument(_ parser: XMLParser) {
 		continuation?.resume(returning: posts)
+	}
+
+	// MARK: - Helpers -
+
+	/// Extracts the URL of the first `<img>` tag found inside an HTML string.
+	/// Used as a fallback to obtain a post's artwork when the RSS feed does not
+	/// emit a `<media:content>` element (e.g. some WordPress.com configurations).
+	///
+	/// Matches both single- and double-quoted `src` attributes and is case-insensitive.
+	/// Returns `nil` if no `<img>` is found or the matched URL is empty.
+	private static func extractFirstImageURL(from html: String) -> String? {
+		let pattern = #"<img\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']"#
+		guard let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive) else {
+			return nil
+		}
+		let range = NSRange(html.startIndex..., in: html)
+		guard let match = regex.firstMatch(in: html, options: [], range: range),
+			  let urlRange = Range(match.range(at: 1), in: html) else {
+			return nil
+		}
+		let url = String(html[urlRange]).trimmingCharacters(in: .whitespacesAndNewlines)
+		return url.isEmpty ? nil : url
 	}
 }

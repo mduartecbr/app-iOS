@@ -1,7 +1,7 @@
 import Foundation
 
 enum URLs {
-    static let domain = "macmagazine.com.br"
+    static let domain = "esporteparatodos.com"
     static let main = "https://\(domain)/"
 
     static let login = "\(main)loginpatrao"

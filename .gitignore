@@ -59,6 +59,9 @@ vendor/
 .AppleDouble
 .LSOverride
 Docs/
+# Exception: our planning docs folder (macOS case-insensitive FS would otherwise capture it)
+!/docs/
+!/docs/**
 #*.xcscmblueprint
 #*.hmap
 #*.ipa
