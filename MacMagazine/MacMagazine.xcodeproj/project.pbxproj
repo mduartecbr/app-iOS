@@ -656,7 +656,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.watchkitapp.WidgetWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.watchkitapp.WidgetWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -694,7 +694,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.watchkitapp.WidgetWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.watchkitapp.WidgetWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "Watch Extension";
@@ -736,7 +736,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -776,7 +776,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = MacMagazine;
@@ -932,7 +932,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.MacMagazinePushNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -964,7 +964,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.MacMagazinePushNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MacMagazine Notification Service";
@@ -994,14 +994,14 @@
 				INFOPLIST_FILE = WatchApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MacMagazine;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.brit.macmagazine;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.esporteparatodos.app;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1035,14 +1035,14 @@
 				INFOPLIST_FILE = WatchApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MacMagazine;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.brit.macmagazine;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.esporteparatodos.app;
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "MacMagazine Wildcard";
@@ -1079,7 +1079,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.MacMagazineWidgetExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -1113,7 +1113,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 5.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brit.macmagazine.MacMagazineWidgetExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esporteparatodos.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "MacMagazine Widget";

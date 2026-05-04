@@ -6,7 +6,7 @@ import os
 import StorageLibrary
 import UIKit
 
-private let logger = Logger(subsystem: "com.macmagazine", category: "Subscription")
+private let logger = Logger(subsystem: "com.esporteparatodos.app", category: "Subscription")
 
 @MainActor
 @Observable

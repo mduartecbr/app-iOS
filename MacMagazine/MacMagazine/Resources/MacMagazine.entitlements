@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.com.brit.macmagazine.cloudkit</string>
+		<string>iCloud.com.esporteparatodos.app.cloudkit</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
@@ -14,8 +14,8 @@
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.brit.macmagazine.onesignal.push</string>
-		<string>group.com.brit.macmagazine.data</string>
+		<string>group.com.esporteparatodos.app.onesignal.push</string>
+		<string>group.com.esporteparatodos.app.data</string>
 	</array>
 </dict>
 </plist>

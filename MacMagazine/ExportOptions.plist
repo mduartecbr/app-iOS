@@ -10,15 +10,15 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.brit.macmagazine</key>
+		<key>com.esporteparatodos.app</key>
 		<string>MacMagazine</string>
-		<key>com.brit.macmagazine.MacMagazineWidgetExtension</key>
+		<key>com.esporteparatodos.app.widget</key>
 		<string>MacMagazine Widget</string>
-		<key>com.brit.macmagazine.watchkitapp</key>
+		<key>com.esporteparatodos.app.watchkitapp</key>
 		<string>MacMagazine Wildcard</string>
-		<key>com.brit.macmagazine.watchkitapp.WidgetWatch</key>
+		<key>com.esporteparatodos.app.watchkitapp.WidgetWatch</key>
 		<string>Watch Extension</string>
-		<key>com.brit.macmagazine.MacMagazinePushNotificationServiceExtension</key>
+		<key>com.esporteparatodos.app.NotificationService</key>
 		<string>MacMagazine Notification Service</string>
 	</dict>
 	<key>signingCertificate</key>
